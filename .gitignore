@@ -1,0 +1,74 @@
+# ---------------------------
+# Python / build artifacts
+# ---------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dylib
+
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.devcontainer/
+
+# Virtual envs
+.venv/
+venv/
+env/
+.env/
+.env*/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / editor files
+.vscode/
+.idea/
+*.iml
+
+# OS crap
+.DS_Store
+Thumbs.db
+
+# ---------------------------
+# Project data
+# ---------------------------
+# -- RAW DATA --
+data/raw/videos/**
+
+## Ignore everything under data/raw...
+#data/raw/**
+#
+## Keep .gitkeep placeholders to keep the folder tree
+#!data/raw/.gitkeep
+#!data/raw/**/.gitkeep
+#
+## Kepp a small set of example files
+## GT example
+#!data/raw/gt/
+#!data/raw/gt/DC13112018-B/
+#!data/raw/gt/DC13112018-B/2490_0.txt
+#
+## Predictions example
+#!data/raw/predictions/
+#!data/raw/predictions/DC13112018-B.txt
+
+# Videos example
+!data/raw/videos/
+!data/raw/videos/DC13112018-B/
+!data/raw/videos/DC13112018-B/2490_0/
+!data/raw/videos/DC13112018-B/2490_0/images/
+!data/raw/videos/DC13112018-B/2490_0/images/frame_0000.jpg
+!data/raw/videos/DC13112018-B/2490_0.mp4
+
+# -- DERIVED DATA --
+data/standardized/**
+#data/processed/**
+
+# Testing
+src/model_eval/experiments/seq*
+scripts/z_*

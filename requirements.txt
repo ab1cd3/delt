@@ -1,0 +1,11 @@
+pandas
+numpy
+matplotlib
+setuptools
+fiftyone
+plotly
+streamlit
+scikit-learn
+xgboost
+lightgbm
+supervision
